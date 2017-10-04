@@ -1,3 +1,5 @@
+import sun.awt.im.SimpleInputMethodWindow;
+
 import java.util.*;
 
 /**
@@ -20,19 +22,18 @@ public class Book {
         after creating the contact, add it to array list then print array
         **/
 
-        Scanner one = new Scanner(System.in);
-
-
-        //Set<Contact> otherContacts = new Collections.emptySet();
             thecontacts.add(Duo);
             thecontacts.add(Solo);
+            System.out.println(thecontacts.toString());
 
-        System.out.println(thecontacts.toString());
+        ContactWindow createContact = new ContactWindow();
 
+
+
+        //thecontacts.remove(Duo);
         //Prints from print C method    Duo.printC();
         //ArrayList.listToString(thecontacts.toArray());
-
-
+        //Add a GUI for easy addressbook entry
 
 
 
