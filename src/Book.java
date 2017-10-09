@@ -13,7 +13,7 @@ public class Book {
 
         List<Contact> thecontacts = new ArrayList<Contact>();
 
-        Contact<Contact> Duo = new Contact<>("jerry",3473473470L);
+        Contact<Contact> Duo = new Contact<>("Jerry",3473473470L);
         Contact<Contact> Solo = new Contact<>("Johnny",2463473470L);
 
         /**
@@ -24,9 +24,15 @@ public class Book {
 
             thecontacts.add(Duo);
             thecontacts.add(Solo);
-            System.out.println(thecontacts.toString());
+            System.out.println(thecontacts.toString()
+                    .replace(",","")
+                    .replace("]","")
+                    .replace("[","")
+                    );
 
         ContactWindow createContact = new ContactWindow();
+
+
 
 
 
