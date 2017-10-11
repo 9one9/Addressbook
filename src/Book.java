@@ -32,6 +32,8 @@ public class Book {
 
         ContactWindow createContact = new ContactWindow();
 
+        final Process Process = new Process(); //cant run process methods without this object.
+
 
 
 

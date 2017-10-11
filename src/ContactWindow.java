@@ -89,30 +89,35 @@ public class ContactWindow extends JFrame{
         //Specifically for addcontact.
         public void actionPerformed(ActionEvent e){
 
-            System.out.println("Working");
+            System.out.println("Contact Below");
 
-           // inputFN = label.setText(text.getText());  //Method contributes firstname
+           //  inputFN = label.setText(text.getText());  //Method contributes firstname
 
+            inputFN = text.getText();
             System.out.println(inputFN);
 
+            tempNum = text3.getText();
+                //Accepting numbers requires accepting as STRING THEN converting to a NUMBER.
 
-            tempNum = label3.getText();
+            //***********
+                //Need to throw exception in case of TEXT in NUMBER field ^
+            //**********
 
-            //How do i display this text box?
-           // inputPhone = Long.parseLong(tempNum);
-
-
-            //Accepting numbers requires accepting as TEXT THEN converting to a NUMBER.
-            //inputPhone = Long.parseLong(label3.getText());
-
-
-
-            //Contact<Contact> Solo = new Contact<>("Johnny",2463473470L);
-
-
-
+            inputPhone = Long.parseLong(tempNum);
+            System.out.println(inputPhone);
 
         }
+
+        public String getfname(){
+            return inputFN;
+        }
+
+        public long getInputPhone(){
+            return inputPhone;
+        }
+        //Create Getters for pipeline to Process.Java
+
+
 
     }
 

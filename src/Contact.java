@@ -9,6 +9,7 @@ public class Contact<T> {
     private String firstname;
     private String lastname;
     private long number;
+    private String address;
 
 
     //Long type literals end with an "L"-> 342434234234L
@@ -17,12 +18,14 @@ public class Contact<T> {
         firstname=fulln;
         number=numb;
     }
+    //We need a no-arg constructor so we can freely create contacts in process.java, below.
 
-    public void setContact(String fullname, long number){
-        this.firstname = fullname;
+    public Contact(){}
+
+    public void setContact(String nameslot1, long number){
+        this.firstname = nameslot1;
         this.number = number;
     }
-
     public void printC(){
         //individual printing
         System.out.println(this.firstname + ":"+ this.number);
