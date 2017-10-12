@@ -22,10 +22,23 @@ public class Contact<T> {
 
     public Contact(){}
 
+    /*
+    *
+     public Contact setContact(String nameslot1, long number){
+        this.firstname = nameslot1;
+        this.number = number;
+
+    }
+    >>>>>> might have erasure problems
+    *
+    * */
+
     public void setContact(String nameslot1, long number){
         this.firstname = nameslot1;
         this.number = number;
     }
+
+
     public void printC(){
         //individual printing
         System.out.println(this.firstname + ":"+ this.number);

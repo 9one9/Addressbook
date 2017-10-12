@@ -79,7 +79,7 @@ public class ContactWindow extends JFrame{
         panel.add(button2); //Cancel & Return
     }
 
-    private class ContactAdder implements ActionListener {
+    public class ContactAdder implements ActionListener {
 
         String inputFN; //firstname
         long inputPhone;
@@ -105,6 +105,8 @@ public class ContactWindow extends JFrame{
 
             inputPhone = Long.parseLong(tempNum);
             System.out.println(inputPhone);
+
+            new Contact<>(inputFN,inputPhone);
 
         }
 

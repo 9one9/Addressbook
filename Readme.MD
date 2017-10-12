@@ -17,3 +17,9 @@ Changed 'Go' to "Add Contact"
 9/11/17
 
 Contacts can be formally added to arraylist. Created process class to hold insertion methods.
+
+9/12/17
+
+How can i create objects outside of main and add to arraylist
+
+Created Home GUI in IntelliJ for future editing.
