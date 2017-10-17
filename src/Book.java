@@ -22,22 +22,24 @@ public class Book {
         after creating the contact, add it to array list then print array
         **/
 
-            thecontacts.add(Duo);
+        ContactWindow createContact = new ContactWindow();
+
+        Thread.sleep
+        synchronized(createContact){
+            wait();
+        }
+
+        thecontacts.add(Duo);
             thecontacts.add(Solo);
-            System.out.println(thecontacts.toString()
+
+        System.out.println(thecontacts.toString()
                     .replace(",","")
                     .replace("]","")
                     .replace("[","")
                     );
 
-        ContactWindow createContact = new ContactWindow();
-        final Process Process = new Process(); //cant run process methods without this object.
 
-
-
-
-
-
+        // final Process Process = new Process(); //cant run process methods without this object.
 
         //thecontacts.remove(Duo);
         //Prints from print C method    Duo.printC();
@@ -47,4 +49,7 @@ public class Book {
 
 
     }
+
+
+
 }

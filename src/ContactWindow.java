@@ -57,9 +57,6 @@ public class ContactWindow extends JFrame{
 
         button = new JButton("Add contact");
         button2 = new JButton("Return");
-            //Action Listener below!
-
-        button.addActionListener(new ContactAdder());
 
         //This panel describes an input window where contacts can be created.
 
@@ -77,6 +74,11 @@ public class ContactWindow extends JFrame{
 
         panel.add(button); //Add
         panel.add(button2); //Cancel & Return
+
+        //Action Listener below!
+
+        button.addActionListener(new ContactAdder());
+
     }
 
     public class ContactAdder implements ActionListener {
@@ -86,8 +88,11 @@ public class ContactWindow extends JFrame{
         String tempNum;
 
 
+
         //Specifically for addcontact.
         public void actionPerformed(ActionEvent e){
+
+
 
             System.out.println("Contact Below");
 
@@ -107,8 +112,21 @@ public class ContactWindow extends JFrame{
             System.out.println(inputPhone);
 
             new Contact<>(inputFN,inputPhone);
-
         }
+
+
+
+                //put synchronized code here somehow
+
+            synchronized(this){
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
 
         public String getfname(){
             return inputFN;
