@@ -88,7 +88,6 @@ public class ContactWindow extends JFrame{
         String tempNum;
 
 
-
         //Specifically for addcontact.
         public void actionPerformed(ActionEvent e){
 
@@ -114,17 +113,9 @@ public class ContactWindow extends JFrame{
             new Contact<>(inputFN,inputPhone);
         }
 
+            //put synchronized code here somehow
 
 
-                //put synchronized code here somehow
-
-            synchronized(this){
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
 
 
 

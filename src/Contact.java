@@ -38,6 +38,9 @@ public class Contact<T> {
         this.number = number;
     }
 
+    public void getContact(){
+        
+    }
 
     public void printC(){
         //individual printing

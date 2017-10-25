@@ -1,4 +1,3 @@
-import sun.awt.im.SimpleInputMethodWindow;
 
 import java.util.*;
 
@@ -23,14 +22,16 @@ public class Book {
         **/
 
         ContactWindow createContact = new ContactWindow();
-
-        Thread.sleep
-        synchronized(createContact){
-            wait();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
+
         thecontacts.add(Duo);
-            thecontacts.add(Solo);
+        thecontacts.add(Solo);
+        thecontacts.add(new Contact());
 
         System.out.println(thecontacts.toString()
                     .replace(",","")
